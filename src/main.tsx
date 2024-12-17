@@ -129,11 +129,6 @@ const CleanSteps: Devvit.CustomPostComponent = (
           I know you're a reliable dog owner... or maybe not! 🐶🤔
         </text>
         <spacer size="medium" />
-        <text weight="bold" size="xlarge">
-          {data.isAuthor
-            ? `${data.username} is the author`
-            : "You are not the author"}
-        </text>
         <spacer size="medium" />
         {options.map((op, index) => (
           <vstack>
@@ -165,18 +160,30 @@ const CleanSteps: Devvit.CustomPostComponent = (
       </vstack>
     ),
     board: (
-      <hstack>
-        <text>leaderboard</text>
-        <spacer size="large" />
+      <vstack alignment="center top" width="100%" height="100%" grow>
+        <spacer size="medium" />
+        <hstack>
+          <text size="xxlarge" weight="bold">
+            LEADERBOARD
+          </text>
+          <spacer size="large" />
+          <button
+            icon="back-outline"
+            onPress={() => goToSelectedPage("home")}
+          />
+        </hstack>
+
+        <spacer size="medium" />
         <LeaderboardPage username={data.username ?? "default_username"} />
-        <button icon="back-outline" onPress={() => goToSelectedPage("home")} />
-      </hstack>
+      </vstack>
     ),
     guessing: (
       <vstack alignment="center top" width="100%" height="100%">
         {data.isAuthor ? (
-          <hstack>
-            <text>Someone is solving your game.</text>
+          <hstack alignment="center middle" grow>
+            <text size="xxlarge" weight="bold" wrap>
+              Someone is trying not to be angry with you.
+            </text>
           </hstack>
         ) : (
           <vstack>

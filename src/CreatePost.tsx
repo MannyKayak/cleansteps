@@ -3,7 +3,6 @@ import { Devvit } from "@devvit/public-api";
 Devvit.addMenuItem({
   label: "Add Clean Steps game",
   location: "subreddit",
-  forUserType: "moderator",
   onPress: async (_event, context) => {
     const { reddit, ui } = context;
     const subreddit = await reddit.getCurrentSubreddit();

@@ -148,26 +148,6 @@ const GuessingSteps = (
           imageWidth={32}
         />
       </zstack>
-      //   <zstack
-      //     onPress={() => {
-      //       if (isPossibleMove) {
-      //         updateSteppedCanvas(props.postData.path[index], index, pixel);
-      //         setCurrentSpritePosition(index);
-      //         possibleSpriteMovements = generatePossibleMovements(index);
-      //       } else {
-      //         context.ui.showToast("You can move only one step at the time!");
-      //       }
-      //     }}
-      //   >
-      //     <hstack height={`${Settings.size}px`} width={`${Settings.size}px`} />
-      //     <image
-      //       url={
-      //         props.postData.path[index] === 1 ? "poop.png" : "transparent.png"
-      //       }
-      //       imageHeight={32}
-      //       imageWidth={32}
-      //     />
-      //   </zstack>
     );
   });
 

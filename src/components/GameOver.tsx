@@ -1,7 +1,6 @@
 import { Devvit } from "@devvit/public-api";
 
 import Settings from "../settings.json" assert { type: "json" };
-
 interface GameOverProps {
   cleanSteps: number;
   poops: number;
@@ -23,7 +22,6 @@ const GameOver = (props: GameOverProps): JSX.Element => {
       <text color="white">Poop Stepped: {props.poops}</text>
       <text color="white">Gained Points: {props.points}</text>
       <text color="white">Your total Points: {props.totPoints}</text>
-      <text color="white">Rank: {props.rank}</text>
     </vstack>
   );
 };

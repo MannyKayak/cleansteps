@@ -1,0 +1,29 @@
+{
+  "resolution": 8,
+  "postLiveSpan": 86400000,
+  "defaultPooSelectedIndex": 1,
+  "defaultPoops": 16,
+  "defaultSteps": 16,
+  "poopOrTransparencyArray": ["bag.png", "dog_pooping.gif"],
+  "pooOrNotArray": ["#FFFFFF", "#964B00", "#A52A2A", "#DAF7A6", "#FFF890"],
+  "size": 32,
+  "theme": {
+    "primary": "#000000",
+    "secondary": "#07495F",
+    "tertiary": "#0E92BE",
+    "weak": "#B2B2B2",
+    "background": "#56CCF2",
+    "shadow": "rgba(0,0,0,0.3)",
+    "orangered": "#FF4500"
+  },
+  "pinnedPost": {
+    "title": "Let's NOT step on the poo!"
+  },
+  "authorRewardForSubmit": 20,
+  "authorRewardForPoopedStepped": 1,
+  "guesserRewardForCleanStep": 2,
+  "guesserRewardForFirstSolve": 15,
+  "extraRewardForNoPoopStepped": 5,
+  "extraRewardForAllPoopStepped": 10,
+  "penalityGoalNotReached": 2
+}
